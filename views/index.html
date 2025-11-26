@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Produtos</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🛍️ Sistema de Produtos</h1>
+        
+        <div class="form-container">
+            <h2 id="titulo-form">➕ Adicionar Produto</h2>
+            <input type="text" id="nome" placeholder="Nome do produto" required>
+            <input type="number" id="preco" placeholder="Preço" step="0.01">
+            <input type="text" id="descricao" placeholder="Descrição">
+            <button onclick="adicionarProduto()">➕ Adicionar Produto</button>
+            <button class="btn-cancelar" onclick="cancelarEdicao()" style="display: none;">❌ Cancelar</button>
+        </div>
+
+        <div class="products-container">
+            <h2>📋 Lista de Produtos</h2>
+            <div id="listaProdutos"></div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
